@@ -1,12 +1,23 @@
 {
-	"name": "AzurePostgreSqlDatabase",
+	"name": "AzurePostgresGenericTable",
 	"properties": {
 		"linkedServiceName": {
 			"referenceName": "AzurePostgreSql1",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"TableName": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "AzurePostgreSqlTable",
-		"schema": []
+		"schema": [],
+		"typeProperties": {
+			"table": {
+				"value": "@dataset().TableName",
+				"type": "Expression"
+			}
+		}
 	}
 }
