@@ -1,0 +1,22 @@
+{
+	"name": "LapTimes",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LaptimesHTTP",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/lap_times.csv"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
