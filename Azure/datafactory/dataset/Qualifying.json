@@ -5,6 +5,9 @@
 			"referenceName": "QualifyingHTTP",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Github"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {

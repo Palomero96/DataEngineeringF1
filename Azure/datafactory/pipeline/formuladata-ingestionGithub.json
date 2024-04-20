@@ -1,6 +1,7 @@
 {
-	"name": "formuladata-ingestion",
+	"name": "formuladata-ingestionGithub",
 	"properties": {
+		"description": "Data ingestion from Github raw data into Azure Data Lake Gen2",
 		"activities": [
 			{
 				"name": "Drivers",

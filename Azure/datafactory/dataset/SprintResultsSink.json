@@ -5,6 +5,9 @@
 			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
+		"folder": {
+			"name": "Github"
+		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
