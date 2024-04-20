@@ -1,9 +1,0 @@
-{
-	"name": "formula1datafactory",
-	"location": "francecentral",
-	"identity": {
-		"type": "SystemAssigned",
-		"principalId": "b9db2703-2e39-4ee1-a034-e9d4117e5c69",
-		"tenantId": "748cb327-cfee-46fb-8270-8c081cd60da3"
-	}
-}
