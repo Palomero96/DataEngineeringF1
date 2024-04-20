@@ -1,0 +1,21 @@
+{
+	"name": "ConstructorStandings",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ConstructorStandingsHTTP",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
