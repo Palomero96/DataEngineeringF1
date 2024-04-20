@@ -1,0 +1,57 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "formula1datafactory"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"value": ""
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"value": "https://palomeroformula1data.dfs.core.windows.net/"
+		},
+		"CircuitsHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/circuits.csv"
+		},
+		"ConstructorResultsHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/constructor_results.csv"
+		},
+		"ConstructorStandingsHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/constructor_standings.csv"
+		},
+		"ConstructorsHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/constructors.csv"
+		},
+		"DriverStandingsHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/driver_standings.csv"
+		},
+		"DriversHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/drivers.csv"
+		},
+		"LaptimesHTTP_properties_typeProperties_url": {
+			"value": "https://github.com/Palomero96/DataEngineeringF1/blob/main/data/lap_times.csv"
+		},
+		"PitStopsHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/pit_stops.csv"
+		},
+		"QualifyingHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/results.csv"
+		},
+		"RacesHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/results.csv"
+		},
+		"ResultsHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/results.csv"
+		},
+		"SprintResultsHTTP_properties_typeProperties_url": {
+			"value": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/sprint_results.csv"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}

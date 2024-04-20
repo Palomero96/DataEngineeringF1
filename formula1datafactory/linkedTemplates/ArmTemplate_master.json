@@ -1,0 +1,160 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "formula1datafactory"
+		},
+		"AzureDataLakeStorage1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'AzureDataLakeStorage1'"
+		},
+		"AzureDataLakeStorage1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://palomeroformula1data.dfs.core.windows.net/"
+		},
+		"CircuitsHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/circuits.csv"
+		},
+		"ConstructorResultsHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/constructor_results.csv"
+		},
+		"ConstructorStandingsHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/constructor_standings.csv"
+		},
+		"ConstructorsHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/constructors.csv"
+		},
+		"DriverStandingsHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/driver_standings.csv"
+		},
+		"DriversHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/drivers.csv"
+		},
+		"LaptimesHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://github.com/Palomero96/DataEngineeringF1/blob/main/data/lap_times.csv"
+		},
+		"PitStopsHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/pit_stops.csv"
+		},
+		"QualifyingHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/results.csv"
+		},
+		"RacesHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/results.csv"
+		},
+		"ResultsHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/results.csv"
+		},
+		"SprintResultsHTTP_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/sprint_results.csv"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "formula1datafactory_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"AzureDataLakeStorage1_accountKey": {
+						"value": "[parameters('AzureDataLakeStorage1_accountKey')]"
+					},
+					"AzureDataLakeStorage1_properties_typeProperties_url": {
+						"value": "[parameters('AzureDataLakeStorage1_properties_typeProperties_url')]"
+					},
+					"CircuitsHTTP_properties_typeProperties_url": {
+						"value": "[parameters('CircuitsHTTP_properties_typeProperties_url')]"
+					},
+					"ConstructorResultsHTTP_properties_typeProperties_url": {
+						"value": "[parameters('ConstructorResultsHTTP_properties_typeProperties_url')]"
+					},
+					"ConstructorStandingsHTTP_properties_typeProperties_url": {
+						"value": "[parameters('ConstructorStandingsHTTP_properties_typeProperties_url')]"
+					},
+					"ConstructorsHTTP_properties_typeProperties_url": {
+						"value": "[parameters('ConstructorsHTTP_properties_typeProperties_url')]"
+					},
+					"DriverStandingsHTTP_properties_typeProperties_url": {
+						"value": "[parameters('DriverStandingsHTTP_properties_typeProperties_url')]"
+					},
+					"DriversHTTP_properties_typeProperties_url": {
+						"value": "[parameters('DriversHTTP_properties_typeProperties_url')]"
+					},
+					"LaptimesHTTP_properties_typeProperties_url": {
+						"value": "[parameters('LaptimesHTTP_properties_typeProperties_url')]"
+					},
+					"PitStopsHTTP_properties_typeProperties_url": {
+						"value": "[parameters('PitStopsHTTP_properties_typeProperties_url')]"
+					},
+					"QualifyingHTTP_properties_typeProperties_url": {
+						"value": "[parameters('QualifyingHTTP_properties_typeProperties_url')]"
+					},
+					"RacesHTTP_properties_typeProperties_url": {
+						"value": "[parameters('RacesHTTP_properties_typeProperties_url')]"
+					},
+					"ResultsHTTP_properties_typeProperties_url": {
+						"value": "[parameters('ResultsHTTP_properties_typeProperties_url')]"
+					},
+					"SprintResultsHTTP_properties_typeProperties_url": {
+						"value": "[parameters('SprintResultsHTTP_properties_typeProperties_url')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "formula1datafactory_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2018-02-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'formula1datafactory_ArmTemplate_0')]"
+			]
+		}
+	]
+}
