@@ -10,7 +10,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "constructor_results.csv",
+				"fileName": "circuits.csv",
 				"folderPath": "raw-data",
 				"fileSystem": "formula1data"
 			},
