@@ -9,6 +9,12 @@
 					"referenceName": "formuladata-ingestionGithub",
 					"type": "PipelineReference"
 				}
+			},
+			{
+				"pipelineReference": {
+					"referenceName": "formuladata-ingestionPostgresAll",
+					"type": "PipelineReference"
+				}
 			}
 		],
 		"type": "ScheduleTrigger",
