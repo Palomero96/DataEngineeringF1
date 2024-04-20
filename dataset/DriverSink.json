@@ -1,15 +1,18 @@
 {
-	"name": "Qualifying",
+	"name": "DriverSink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "QualifyingHTTP",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "AzureBlobFSLocation",
+				"fileName": "drivers.csv",
+				"folderPath": "raw-data",
+				"fileSystem": "formula1data"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

@@ -1,15 +1,18 @@
 {
-	"name": "Qualifying",
+	"name": "ConstructorStandingsSink",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "QualifyingHTTP",
+			"referenceName": "AzureDataLakeStorage1",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
 		"type": "DelimitedText",
 		"typeProperties": {
 			"location": {
-				"type": "HttpServerLocation"
+				"type": "AzureBlobFSLocation",
+				"fileName": "constructor_standings.csv",
+				"folderPath": "raw-data",
+				"fileSystem": "formula1data"
 			},
 			"columnDelimiter": ",",
 			"escapeChar": "\\",

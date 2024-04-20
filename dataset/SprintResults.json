@@ -1,8 +1,8 @@
 {
-	"name": "Qualifying",
+	"name": "SprintResults",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "QualifyingHTTP",
+			"referenceName": "SprintResultsHTTP",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],

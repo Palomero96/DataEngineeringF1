@@ -1,8 +1,8 @@
 {
-	"name": "Qualifying",
+	"name": "PitStops",
 	"properties": {
 		"linkedServiceName": {
-			"referenceName": "QualifyingHTTP",
+			"referenceName": "PitStopsHTTP",
 			"type": "LinkedServiceReference"
 		},
 		"annotations": [],
