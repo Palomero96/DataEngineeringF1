@@ -1,0 +1,12 @@
+{
+	"name": "ConstructorResultsHTTP",
+	"properties": {
+		"annotations": [],
+		"type": "HttpServer",
+		"typeProperties": {
+			"url": "https://raw.githubusercontent.com/Palomero96/DataEngineeringF1/main/data/constructor_results.csv",
+			"enableServerCertificateValidation": true,
+			"authenticationType": "Anonymous"
+		}
+	}
+}
