@@ -1,5 +1,5 @@
 # Databricks notebook source
-# Mount the Azure Data Lake Storage
+# Mount the Azure Data Lake Storaged
 dbutils.fs.mount(
   source="abfss://formula1data@palomeroformula1data.dfs.core.windows.net", 
   mount_point="/mnt/formula1data",
