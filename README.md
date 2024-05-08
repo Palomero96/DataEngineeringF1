@@ -2,7 +2,7 @@
 The goal of this project is to use my theorical knowledge to practice and gain some experience in the data engineering field. I have no work experience as a Data Engineer but I would like to develop my career in this path. Despite of having no experience, I have used some of the tools that are used in the role.
 
 For this project I will be using the following tech stack:
-- A Raspeberry Pi to host the PostgreSQL
+- A Raspberry Pi to host the PostgreSQL
 - PostgreSQL
 - Python
 - Azure Flexible PostgreSQL
