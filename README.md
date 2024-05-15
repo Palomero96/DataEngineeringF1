@@ -87,7 +87,7 @@ docker rm CONTAINERNAME
 
 
 ## Load and Extraction in PostgreSQL <a name="loadextraction"></a>
-I have the develop a Python file to load data to PostgreSQL. I read data from all csv files and create a table in the database for each csv file.
+I have developed a Python file to load data to PostgreSQL. I read data from all csv files and create a table in the database for each csv file.
 I have used these libraries:
 - psycopg2
 - pandas
@@ -118,4 +118,9 @@ In order to extract this data I have try two different methods.
 You fill find all Data Factory objects definitions under "/5.LoadDatatoDatalake/datafactory"
   
 ## Data Transformation in Azure Databricks <a name="datatransformation"></a>
-Extra
+Finally, I have used Azure Databricks to clean data and make simple transformations. I have developed a Python file where I:
+
+- Connect to my Azure Storage Account
+- Read raw data from it
+- Transform data using Spark methods
+- Write transformed data to a different path in Azure Storage
