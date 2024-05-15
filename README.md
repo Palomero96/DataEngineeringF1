@@ -124,3 +124,5 @@ Finally, I have used Azure Databricks to clean data and make simple transformati
 - Read raw data from it
 - Transform data using Spark methods
 - Write transformed data to a different path in Azure Storage
+
+You fill find this python file under "/6.AzureDataTransformation/databricks"
